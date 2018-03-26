@@ -389,7 +389,7 @@ public class AdminActionAgv  extends BaseAction {
 		try {
 			//检查登录名是否存在
 			Agv Agv = new Agv();
-			Agv.setBxCoordinate(paramsAgv.setBxCoordinate());
+			Agv.setBxCoordinate(paramsAgv.setBxCoordinate(11111.11));
 			Agv = adminManager.queryAgv(Agv);
 			if (Agv!=null) {
 				tip="失败，该车牌号已经存在！";
